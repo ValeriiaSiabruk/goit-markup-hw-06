@@ -478,16 +478,16 @@
         </div>
 
         <div class="footer-form">
-          <form class="form-latter">
-            <h2 class="form-latter-title">Подпишитесь на рассылку</h2>
-            <input class="latter-input" type="email" name="email" placeholder="E-mail" />
+          <h2 class="footer-form-title">Подпишитесь на рассылку</h2>
+          <form class="footer-form-subscribe">
+            <input class="subscribe-input" type="email" name="email" placeholder="E-mail" />
+            <button class="button button-large button-subscribe">
+              Подписаться
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-subscribe" />
+              </svg>
+            </button>
           </form>
-          <button class="button button-large button-latter">
-            Подписаться
-            <svg class="icon-send" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-send" />
-            </svg>
-          </button>
         </div>
       </div>
     </footer>
@@ -500,8 +500,8 @@
           </svg>
         </button>
 
+        <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form">
-          <h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <label class="modal-field"
             >Имя
             <input class="modal-input" type="text" name="name" />
@@ -547,8 +547,8 @@
               Соглашаюсь с рассылкой и принимаю <a href="#!">Условия договора</a>
             </p>
           </label>
+          <button class="button button-large button-checkbox" type="submit">Отправить</button>
         </form>
-        <button class="button button-large button-checkbox" type="submit">Отправить</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

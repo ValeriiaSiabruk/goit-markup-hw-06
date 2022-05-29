@@ -1,4 +1,5 @@
 :root {
+  --nativ-focus: #0052d3;
   --border: #ececec;
   --hero-button-hover: #188ce8;
   --icon: #afb1b8;
@@ -493,12 +494,6 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .works-overlay-description {
-  font-size: 18px;
-  line-height: 1.556;
-  color: var(--white);
-} */
-
 .works-list-item {
   display: block;
 }
@@ -611,12 +606,7 @@ button {
   fill: currentColor;
 }
 
-.footer-form {
-  display: flex;
-  align-items: center;
-}
-
-.form-latter-title {
+.footer-form-title {
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.142;
@@ -625,10 +615,11 @@ button {
   color: var(--white);
 }
 
-.form-latter {
+.footer-form-subscribe {
+  display: flex;
 }
 
-.latter-input {
+.subscribe-input {
   width: 358px;
   margin-right: 12px;
   border: 1px solid var(--footer-input-border);
@@ -639,11 +630,11 @@ button {
   outline: 0;
 }
 
-.latter-input:focus {
+.subscribe-input:focus {
   border: 1px solid var(--blue);
 }
 
-.latter-input::placeholder {
+.subscribe-input::placeholder {
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
@@ -652,14 +643,12 @@ button {
   color: var(--transparent-gray);
 }
 
-.button-latter {
+.button-subscribe {
   display: flex;
   align-items: center;
-  justify-content: center;
-  align-self: self-end;
 }
 
-.icon-send {
+.icon-subscribe {
   margin-left: 10px;
   fill: currentColor;
 }
@@ -748,7 +737,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .modal-input {
@@ -758,6 +747,7 @@ button {
   border: 1px solid var(--border-modal-input);
   border-radius: 4px;
   padding: 11px 42px;
+  font-size: 14px;
   outline: 0;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -780,7 +770,7 @@ button {
 .modal-textarea {
   height: 120px;
   margin-bottom: 20px;
-  padding: 16px 12px;
+  padding: 12px 16px;
   resize: none;
 }
 
@@ -809,6 +799,11 @@ button {
 .modal-field-checkbox:checked + .checkbox-box {
   box-shadow: none;
 }
+
+.modal-field-checkbox:focus-visible + .checkbox-box {
+  outline: 2px solid var(--nativ-focus);
+}
+
 .modal-field-checkbox:checked + .checkbox-box .checkbox-icon {
   opacity: 1;
 }
